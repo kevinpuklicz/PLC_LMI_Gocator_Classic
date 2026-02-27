@@ -1,0 +1,162 @@
+﻿(*********************************************
+
+  Import-Export
+  Version   := RSLogix 5000 v35.00
+  Owner     := , 
+  Exported  := Mon Apr 29 17:33:36 2024
+
+  Note:  File encoded in UTF-8.  Only edit file in a program 
+         which supports UTF-8 (like Notepad, not Wordpad).
+
+**********************************************)
+IE_VER := 2.26;
+
+CONTROLLER EDS_V35 (ProcessorType := "1769-L16ER-BB1B",
+                    Major := 35,
+                    TimeSlice := 20,
+                    ShareUnusedTimeSlice := 1,
+                    RedundancyEnabled := 0,
+                    KeepTestEditsOnSwitchOver := 0,
+                    DataTablePadPercentage := 50,
+                    SecurityCode := 0,
+                    ChangesToDetect := 16#ffff_ffff_ffff_ffff,
+                    SFCExecutionControl := "CurrentActive",
+                    SFCRestartPosition := "MostRecent",
+                    SFCLastScan := "DontScan",
+                    SerialNumber := 16#60af_5512,
+                    MatchProjectToController := No,
+                    CanUseRPIFromProducer := No,
+                    InhibitAutomaticFirmwareUpdate := 0,
+                    PassThroughConfiguration := EnabledWithAppend,
+                    DownloadProjectDocumentationAndExtendedProperties := Yes,
+                    ReportMinorOverflow := 0)
+	MODULE Local (Parent := "Local",
+	              ParentModPortId := 1,
+	              CatalogNumber := "1769-L16ER-BB1B",
+	              Vendor := 1,
+	              ProductType := 14,
+	              ProductCode := 153,
+	              Major := 35,
+	              Minor := 11,
+	              ChassisSize := 2,
+	              Slot := 0,
+	              Mode := 2#0000_0000_0000_0001,
+	              CompatibleModule := 0,
+	              KeyMask := 2#0000_0000_0000_0000)
+	END_MODULE
+
+	MODULE Discrete_IO (Parent := "Local",
+	                    ParentModPortId := 1,
+	                    CatalogNumber := "Embedded",
+	                    Vendor := 1,
+	                    ProductType := 7,
+	                    ProductCode := 1140,
+	                    Major := 35,
+	                    Minor := 11,
+	                    PortLabel := "RxBACKPLANE",
+	                    Slot := 1,
+	                    Mode := 2#0000_0000_0000_0001,
+	                    CompatibleModule := 1,
+	                    KeyMask := 2#0000_0000_0001_1111)
+			ExtendedProp := [[[___<public><ConfigID>100</ConfigID><CatNum>Embedded</CatNum></public>___]]]
+			ConfigData  := [84,113,1,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000
+		,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,0,0,0,0,0,0];
+			CONNECTION Data (Rate := 20000,
+			                 EventID := 0,
+			                 Unicast := No)
+					InputData  := [0,0];
+					OutputData  := [0];
+			END_CONNECTION
+
+	END_MODULE
+
+	MODULE G2410 (Parent := "Local",
+	              ParentModPortId := 2,
+	              CatalogNumber := "GXXXX",
+	              Vendor := 1256,
+	              ProductType := 43,
+	              ProductCode := 1,
+	              Major := 6,
+	              Minor := 3,
+	              PortLabel := "ENet",
+	              NodeAddress := "192.168.1.17",
+	              Mode := 2#0000_0000_0000_0000,
+	              CompatibleModule := 1,
+	              KeyMask := 2#0000_0000_0001_1111,
+	              SafetyEnabled := 0)
+			ExtendedProp := [[[___<public><PL>02<Version Name=$Q2.2$Q/></PL><Vendor>LMI Technologies</Vendor><CatNum>GXXXX</CatNum><DataTypeFormats><DataTypeFormat InstanceApplicationPath=$Q20 04 2D 00 22 03 30 03$Q Format=$Q1$Q Type=$QInput$Q/><DataTypeFormat InstanceApplicationPath=$Q20 04 2C 64 30 03$Q Format=$Q1$Q Type=$QOutput$Q/></DataTypeFormats></public>___]]]
+			CONNECTION _200424972C642D002203 (Rate := 10000,
+			                                  InputSize := 380,
+			                                  OutputSize := 32,
+			                                  EventID := 0,
+			                                  Priority := Scheduled,
+			                                  InputConnectionType := Unicast,
+			                                  InputProductionTrigger := Cyclic,
+			                                  ConnectionPath := "20 04 24 97 2c 64 2d 00 22 03",
+			                                  InputTagSuffix := "I",
+			                                  OutputTagSuffix := "O")
+					InputData  := [0,9,0,0,0,0,400000,4275,361496,0,987563895,84,49089,0,361496,0,0,0,0,0,2,2,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+		,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,-2147483648,-2147483648,1000,-2147483648,-2147483648
+		,-2147483648,-2147483648,-2147483648,-2147483648,-2147483648,-2147483648,-2147483648,-2147483648
+		,-2147483648,-2147483648,-2147483648,-2147483648,-2147483648,-2147483648,-2147483648,-2147483648
+		,-2147483648,-2147483648,-2147483648,-2147483648,-2147483648,-2147483648,-2147483648,-2147483648
+		,-2147483648,-2147483648,-2147483648,-2147483648,-2147483648,-2147483648,-2147483648,-2147483648
+		,-2147483648,-2147483648,-2147483648,-2147483648,-2147483648,-2147483648,-2147483648,-2147483648
+		,-2147483648,-2147483648,-2147483648,-2147483648,-2147483648,-2147483648,-2147483648,-2147483648
+		,-2147483648,-2147483648,-2147483648,-2147483648,-2147483648,-2147483648,-2147483648,-2147483648
+		,-2147483648,-2147483648,-2147483648];
+					OutputData  := [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+			END_CONNECTION
+
+	END_MODULE
+
+	TAG
+	END_TAG
+
+	PROGRAM MainProgram (MAIN := "MainRoutine",
+	                     MODE := 0,
+	                     DisableFlag := 0,
+	                     UseAsFolder := 0)
+		TAG
+		END_TAG
+
+		ROUTINE MainRoutine 
+		END_ROUTINE
+
+		CHILD_PROGRAMS
+		END_CHILD_PROGRAMS
+
+	END_PROGRAM
+
+	TASK MainTask (Type := CONTINUOUS,
+	               Rate := 10,
+	               Priority := 10,
+	               Watchdog := 500,
+	               DisableUpdateOutputs := No,
+	               InhibitTask := No)
+			MainProgram;
+	END_TASK
+
+CONFIG CST(SystemTimeMasterID := 0) END_CONFIG
+
+CONFIG EthernetNetwork(SupervisorModeEnabled := 0,
+	                                 SupervisorPrecedence := 0,
+	                                 BeaconInterval := 400,
+	                                 BeaconTimeout := 1960,
+	                                 VLANID := 0) END_CONFIG
+
+CONFIG EthernetPort1(Label := "1",
+	                             PortEnabled := 1) END_CONFIG
+
+CONFIG EthernetPort2(Label := "2",
+	                             PortEnabled := 1) END_CONFIG
+
+CONFIG TimeSynchronize(Priority1 := 128,
+	                                 Priority2 := 128,
+	                                 PTPEnable := 0) END_CONFIG
+
+CONFIG WallClockTime(LocalTimeAdjustment := 0,
+	                     TimeZone := 0) END_CONFIG
+
+END_CONTROLLER
+

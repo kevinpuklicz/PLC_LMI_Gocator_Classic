@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RSLogix5000Content SchemaRevision="1.0" SoftwareRevision="35.00" TargetName="EDS_V35" TargetType="Controller" ContainsContext="false" ExportDate="Mon Apr 29 17:34:34 2024" ExportOptions="NoRawData L5KData DecoratedData ForceProtectedEncoding AllProjDocTrans">
+<Controller Use="Target" Name="EDS_V35" ProcessorType="1769-L16ER-BB1B" MajorRev="35" MinorRev="11" TimeSlice="20" ShareUnusedTimeSlice="1" ProjectCreationDate="Mon Apr 29 17:27:44 2024" LastModifiedDate="Mon Apr 29 17:31:33 2024" SFCExecutionControl="CurrentActive" SFCRestartPosition="MostRecent"
+ SFCLastScan="DontScan" ProjectSN="16#60af_5512" MatchProjectToController="false" CanUseRPIFromProducer="false" InhibitAutomaticFirmwareUpdate="0" PassThroughConfiguration="EnabledWithAppend" DownloadProjectDocumentationAndExtendedProperties="true" DownloadProjectCustomProperties="true" ReportMinorOverflow="false">
+<RedundancyInfo Enabled="false" KeepTestEditsOnSwitchOver="false" IOMemoryPadPercentage="90" DataTablePadPercentage="50"/>
+<Security Code="0" ChangesToDetect="16#ffff_ffff_ffff_ffff"/>
+<SafetyInfo/>
+<DataTypes/>
+<Modules>
+<Module Name="Local" CatalogNumber="1769-L16ER-BB1B" Vendor="1" ProductType="14" ProductCode="153" Major="35" Minor="11" ParentModule="Local" ParentModPortId="1" Inhibited="false" MajorFault="true"
+>
+<EKey State="Disabled"/>
+<Ports>
+<Port Id="1" Address="0" Type="PointIO" Upstream="false">
+<Bus Size="2"/>
+</Port>
+<Port Id="2" Type="Ethernet" Upstream="false">
+<Bus/>
+</Port>
+</Ports>
+</Module>
+<Module Name="Discrete_IO" CatalogNumber="Embedded" Vendor="1" ProductType="7" ProductCode="1140" Major="35" Minor="11" ParentModule="Local" ParentModPortId="1" Inhibited="false" MajorFault="true"
+>
+<EKey State="CompatibleModule"/>
+<Ports>
+<Port Id="1" Address="1" Type="PointIO" Upstream="true"/>
+</Ports>
+<Communications>
+<ConfigTag ConfigSize="80" ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[[84,113,1,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000
+		,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,0,0,0,0,0,0]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="AB:Embedded_DiscreteIO:C:0">
+<DataValueMember Name="Pt00FilterOffOn" DataType="INT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="Pt00FilterOnOff" DataType="INT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="Pt01FilterOffOn" DataType="INT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="Pt01FilterOnOff" DataType="INT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="Pt02FilterOffOn" DataType="INT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="Pt02FilterOnOff" DataType="INT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="Pt03FilterOffOn" DataType="INT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="Pt03FilterOnOff" DataType="INT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="Pt04FilterOffOn" DataType="INT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="Pt04FilterOnOff" DataType="INT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="Pt05FilterOffOn" DataType="INT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="Pt05FilterOnOff" DataType="INT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="Pt06FilterOffOn" DataType="INT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="Pt06FilterOnOff" DataType="INT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="Pt07FilterOffOn" DataType="INT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="Pt07FilterOnOff" DataType="INT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="Pt08FilterOffOn" DataType="INT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="Pt08FilterOnOff" DataType="INT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="Pt09FilterOffOn" DataType="INT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="Pt09FilterOnOff" DataType="INT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="Pt10FilterOffOn" DataType="INT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="Pt10FilterOnOff" DataType="INT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="Pt11FilterOffOn" DataType="INT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="Pt11FilterOnOff" DataType="INT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="Pt12FilterOffOn" DataType="INT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="Pt12FilterOnOff" DataType="INT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="Pt13FilterOffOn" DataType="INT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="Pt13FilterOnOff" DataType="INT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="Pt14FilterOffOn" DataType="INT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="Pt14FilterOnOff" DataType="INT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="Pt15FilterOffOn" DataType="INT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="Pt15FilterOnOff" DataType="INT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="FaultMode" DataType="INT" Radix="Binary" Value="2#0000_0000_0000_0000"/>
+<DataValueMember Name="FaultValue" DataType="INT" Radix="Binary" Value="2#0000_0000_0000_0000"/>
+<DataValueMember Name="ProgMode" DataType="INT" Radix="Binary" Value="2#0000_0000_0000_0000"/>
+<DataValueMember Name="ProgValue" DataType="INT" Radix="Binary" Value="2#0000_0000_0000_0000"/>
+<DataValueMember Name="COSOnOffEn" DataType="INT" Radix="Binary" Value="2#0000_0000_0000_0000"/>
+<DataValueMember Name="COSOffOnEn" DataType="INT" Radix="Binary" Value="2#0000_0000_0000_0000"/>
+</Structure>
+</Data>
+</ConfigTag>
+<Connections>
+<Connection Name="Data" RPI="20000" Type="Output" EventID="0" ProgrammaticallySendEventTrigger="false" Unicast="false">
+<InputTag ExternalAccess="Read/Write">
+<Data Format="Decorated">
+<Structure DataType="AB:Embedded_DiscreteIO:I:0">
+<DataValueMember Name="Fault" DataType="DINT" Radix="Binary" Value="2#0000_0000_0000_0000_0000_0000_0000_0000"/>
+<DataValueMember Name="Data" DataType="INT" Radix="Binary" Value="2#0000_0000_0000_0000"/>
+</Structure>
+</Data>
+</InputTag>
+<OutputTag ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[[0]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="AB:Embedded_DiscreteIO:O:0">
+<DataValueMember Name="Data" DataType="INT" Radix="Binary" Value="2#0000_0000_0000_0000"/>
+</Structure>
+</Data>
+</OutputTag>
+</Connection>
+</Connections>
+</Communications>
+<ExtendedProperties>
+<public><ConfigID>100</ConfigID><CatNum>Embedded</CatNum></public>
+</ExtendedProperties>
+</Module>
+<Module Name="G2410" CatalogNumber="GXXXX" Vendor="1256" ProductType="43" ProductCode="1" Major="6" Minor="3" ParentModule="Local" ParentModPortId="2" Inhibited="false" MajorFault="false"
+ SafetyEnabled="false">
+<EKey State="CompatibleModule"/>
+<Ports>
+<Port Id="2" Address="192.168.1.17" Type="Ethernet" Upstream="true"/>
+</Ports>
+<Communications>
+<Connections>
+<Connection Name="_200424972C642D002203" RPI="10000" Type="StandardDataDriven" OutputSize="32" InputSize="380" EventID="0" ProgrammaticallySendEventTrigger="false" Priority="Scheduled" InputConnectionType="Unicast" InputProductionTrigger="Cyclic" ConnectionPath="20 04 24 97 2c 64 2d 00 22 03"
+ InputTagSuffix="I" OutputTagSuffix="O">
+<InputTag ExternalAccess="Read/Write">
+<Data Format="Decorated">
+<Structure DataType="_04E8:GXXXX_67D20741:I:0">
+<DataValueMember Name="ConnectionFaulted" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Sensor_State" DataType="SINT" Radix="Binary" Value="2#0000_1001"/>
+<DataValueMember Name="Run_State" DataType="BOOL" Value="1"/>
+<DataValueMember Name="Conflict_due_to_Unreachable_Buddy" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Last_Command_State" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Laser_Safety_State" DataType="BOOL" Value="1"/>
+<DataValueMember Name="State_Issue1" DataType="BOOL" Value="0"/>
+<DataValueMember Name="State_Issue2" DataType="BOOL" Value="0"/>
+<DataValueMember Name="State_Issue3" DataType="BOOL" Value="0"/>
+<DataValueMember Name="State_Issue4" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Alignment_and_Command_State" DataType="SINT" Radix="Binary" Value="2#0000_0000"/>
+<DataValueMember Name="Command_in_Progress" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Aligned" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Reserved1" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Command_Complete" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Reserved2" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Reserved3" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Reserved4" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Reserved5" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Inputs" DataType="INT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Z_Index_Position_0" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Z_Index_Position_1" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Exposure" DataType="DINT" Radix="Decimal" Value="400000"/>
+<DataValueMember Name="Temperature" DataType="DINT" Radix="Decimal" Value="4275"/>
+<DataValueMember Name="Encoder_Position_0" DataType="DINT" Radix="Decimal" Value="361496"/>
+<DataValueMember Name="Encoder_Position_1" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Time_0" DataType="DINT" Radix="Decimal" Value="1047304149"/>
+<DataValueMember Name="Time_1" DataType="DINT" Radix="Decimal" Value="84"/>
+<DataValueMember Name="Frame_0" DataType="DINT" Radix="Decimal" Value="65007"/>
+<DataValueMember Name="Frame_1" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Current_Encoder_Position_0" DataType="DINT" Radix="Decimal" Value="361496"/>
+<DataValueMember Name="Current_Encoder_Position_1" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Decision0" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision1" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision2" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Decision3" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision4" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision5" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision6" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision7" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision8" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision9" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision10" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision11" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision12" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision13" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision14" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision15" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision16" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision17" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision18" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision19" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision20" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision21" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision22" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision23" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision24" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision25" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision26" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision27" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision28" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision29" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision30" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision31" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision32" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision33" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision34" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision35" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision36" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision37" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision38" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision39" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision40" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision41" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision42" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision43" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision44" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision45" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision46" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision47" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision48" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision49" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision50" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision51" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision52" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision53" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision54" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision55" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision56" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision57" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision58" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision59" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision60" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision61" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision62" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Decision63" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="Measurement0" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement1" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement2" DataType="DINT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="Measurement3" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement4" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement5" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement6" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement7" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement8" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement9" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement10" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement11" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement12" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement13" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement14" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement15" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement16" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement17" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement18" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement19" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement20" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement21" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement22" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement23" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement24" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement25" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement26" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement27" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement28" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement29" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement30" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement31" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement32" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement33" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement34" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement35" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement36" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement37" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement38" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement39" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement40" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement41" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement42" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement43" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement44" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement45" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement46" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement47" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement48" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement49" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement50" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement51" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement52" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement53" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement54" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement55" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement56" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement57" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement58" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement59" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement60" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement61" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement62" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+<DataValueMember Name="Measurement63" DataType="DINT" Radix="Decimal" Value="-2147483648"/>
+</Structure>
+</Data>
+</InputTag>
+<OutputTag ExternalAccess="Read/Write">
+<Data Format="L5K">
+<![CDATA[[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="_04E8:GXXXX_F45C457B:O:0">
+<DataValueMember Name="Command" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Reserved_or_Job_File1" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Reserved_or_Job_File2" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Reserved_or_Job_File3" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Reserved_or_Job_File4" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Reserved_or_Job_File5" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Reserved_or_Job_File6" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Reserved_or_Job_File7" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Reserved_or_Job_File8" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Reserved_or_Job_File9" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Reserved_or_Job_File10" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Reserved_or_Job_File11" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Reserved_or_Job_File12" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Reserved_or_Job_File13" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Reserved_or_Job_File14" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Reserved_or_Job_File15" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Reserved_or_Job_File16" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Reserved_or_Job_File17" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Reserved_or_Job_File18" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Reserved_or_Job_File19" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Reserved_or_Job_File20" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Reserved_or_Job_File21" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Reserved_or_Job_File22" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Reserved_or_Job_File23" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Reserved_or_Job_File24" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Reserved_or_Job_File25" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Reserved_or_Job_File26" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Reserved_or_Job_File27" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Reserved_or_Job_File28" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Reserved_or_Job_File29" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Reserved_or_Job_File30" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Reserved_or_Job_File31" DataType="SINT" Radix="Decimal" Value="0"/>
+</Structure>
+</Data>
+</OutputTag>
+</Connection>
+</Connections>
+</Communications>
+<ExtendedProperties>
+<public><PL>02<Version Name="2.2"/></PL><Vendor>LMI Technologies</Vendor><CatNum>GXXXX</CatNum><DataTypeFormats><DataTypeFormat InstanceApplicationPath="20 04 2D 00 22 03 30 03" Format="1" Type="Input"/><DataTypeFormat InstanceApplicationPath="20 04 2C 64 30 03" Format="1" Type="Output"/></DataTypeFormats></public>
+</ExtendedProperties>
+</Module>
+</Modules>
+<AddOnInstructionDefinitions/>
+<Tags/>
+<Programs>
+<Program Name="MainProgram" TestEdits="false" MainRoutineName="MainRoutine" Disabled="false" UseAsFolder="false">
+<Tags/>
+<Routines>
+<Routine Name="MainRoutine" Type="RLL"/>
+</Routines>
+</Program>
+</Programs>
+<Tasks>
+<Task Name="MainTask" Type="CONTINUOUS" Priority="10" Watchdog="500" DisableUpdateOutputs="false" InhibitTask="false">
+<ScheduledPrograms>
+<ScheduledProgram Name="MainProgram"/>
+</ScheduledPrograms>
+</Task>
+</Tasks>
+<CST MasterID="0"/>
+<WallClockTime LocalTimeAdjustment="0" TimeZone="0"/>
+<Trends/>
+<DataLogs/>
+<TimeSynchronize Priority1="128" Priority2="128" PTPEnable="false"/>
+<EthernetPorts>
+<EthernetPort Port="1" Label="1" PortEnabled="true"/>
+<EthernetPort Port="2" Label="2" PortEnabled="true"/>
+</EthernetPorts>
+<EthernetNetwork SupervisorModeEnabled="false" SupervisorPrecedence="0" BeaconInterval="400" BeaconTimeout="1960" VLANID="0"/>
+</Controller>
+</RSLogix5000Content>
